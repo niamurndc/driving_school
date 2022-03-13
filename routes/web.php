@@ -18,6 +18,7 @@ Route::get('/', [App\Http\Controllers\FrontController::class, 'index'])->name('w
 Route::get('/course', [App\Http\Controllers\FrontController::class, 'course'])->name('course');
 Route::get('/road-sign', [App\Http\Controllers\FrontController::class, 'roadSign']);
 Route::get('/dash-icon', [App\Http\Controllers\FrontController::class, 'dashIcon']);
+Route::get('/exam-preparation/{id}', [App\Http\Controllers\FrontController::class, 'examPrep']);
 Route::get('/notice', [App\Http\Controllers\FrontController::class, 'notice']);
 Route::get('/youtube', [App\Http\Controllers\FrontController::class, 'youtube']);
 

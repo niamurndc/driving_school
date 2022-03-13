@@ -33,6 +33,9 @@
                         <a class="nav-link" href="/road-sign">রোড সাইন</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/exam-preparation/0">পরীক্ষার প্রস্তুতি</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="/notice">নোটিশ</a>
                     </li>
                     <li class="nav-item">

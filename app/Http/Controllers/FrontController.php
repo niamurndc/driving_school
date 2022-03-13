@@ -28,6 +28,19 @@ class FrontController extends Controller
         return view('dash-icon', ['icons' => $icons]);
     }
 
+    public function examPrep($id){
+        $eps = Content::where('course_id', 999)->get();
+        $content = Content::find($id);
+
+        if($content == null){
+            $content1 = Content::where('course_id', 999)->first();
+
+            return view('exam-prep', ['eps' => $eps, 'content' => $content1]);
+        }else{
+            return view('exam-prep', ['eps' => $eps, 'content' => $content]);
+        }
+    }
+
     public function notice(){
         $notices = Notice::all();
         return view('notice', ['notices' => $notices]);
