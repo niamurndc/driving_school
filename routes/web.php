@@ -168,6 +168,12 @@ Route::get('/admin/notice/edit/{id}', [App\Http\Controllers\NoticeController::cl
 Route::post('/admin/notice/edit/{id}', [App\Http\Controllers\NoticeController::class, 'update']);
 Route::get('/admin/notice/delete/{id}', [App\Http\Controllers\NoticeController::class, 'delete']);
 
+// Admin Users Route
+// ************************
+
+Route::get('/admin/users', [App\Http\Controllers\CustomerController::class, 'index']);
+Route::get('/admin/user/edit/{id}', [App\Http\Controllers\CustomerController::class, 'edit']);
+
 // Admin Backup Route
 // ************************
 
@@ -184,6 +190,8 @@ Route::post('/admin/slider/create', [App\Http\Controllers\SliderController::clas
 Route::get('/admin/slider/edit/{id}', [App\Http\Controllers\SliderController::class, 'edit']);
 Route::post('/admin/slider/edit/{id}', [App\Http\Controllers\SliderController::class, 'update']);
 Route::get('/admin/slider/delete/{id}', [App\Http\Controllers\SliderController::class, 'delete']);
+
+
 
 // Admin Setting Route
 // ************************

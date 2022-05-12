@@ -68,6 +68,13 @@
                 </a>
               </li>
 
+              <li class="nav-title">Customer & Report</li>
+              <li class="nav-item">
+                <a class="nav-link" href="/admin/users">
+                  <i class="fa fa-user nav-icon"></i> Customers
+                </a>
+              </li>
+
 
               <li class="nav-title">Settings & Backup</li>
 
